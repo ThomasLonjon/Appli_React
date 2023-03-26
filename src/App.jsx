@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import PokemonCard from "./components/PokemonCard";
 
 function App() {
   const pokemon = {
@@ -11,8 +10,16 @@ function App() {
 
   return (
     <div className="App">
-      <div> titre = Pokemon card</div>
+      <PokemonCard pokemon={pokemon} />
     </div>
+  );
+}
+
+function PokemonCard(props) {
+  return (
+    <figure>
+      <img src={props.pokemon.imgSrc} alt={props.pokemon.name} />
+    </figure>
   );
 }
 
