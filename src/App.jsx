@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import PokemonCard from "./components/PokemonCard";
 import NavBar from "./components/Navbar";
@@ -36,6 +36,13 @@ function App() {
 
   const [pokemonIndex, setPokemonIndex] = useState(0);
 
+
+  useEffect(() => {
+    alert("Welcome in this amazing world, this is an automatic message !!!");
+  }, []);
+
+
+  
   ////////////////////////////////////RETURN/////////////////////////////////////
   return (
     <div className="App">
@@ -48,5 +55,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
