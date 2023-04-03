@@ -36,10 +36,6 @@ function App() {
 
   const [pokemonIndex, setPokemonIndex] = useState(0);
 
-  useEffect(() => {
-    alert("Welcome in this amazing world, this is an automatic message !!!");
-  }, []);
-
   ////////////////////////////////////RETURN/////////////////////////////////////
   return (
     <div className="App">
